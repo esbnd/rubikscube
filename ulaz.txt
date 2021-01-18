@@ -1,29 +1,29 @@
-gore
-g g g
-g g g
-g g g
-
-ispod
-i i i
-i i i
-i i i
-
 napred
 n n n
 n n n
 n n n
-
-pozadi
-p p p
-p p p
-p p p
 
 desno
 d d d
 d d d
 d d d
 
+gore
+g g g
+g g g
+g g g
+
+pozadi
+p p p
+p p p
+p p p
+
 levo
 l l l
 l l l
 l l l
+
+ispod
+i i i
+i i i
+i i i
