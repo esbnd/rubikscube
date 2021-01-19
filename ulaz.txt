@@ -1,29 +1,29 @@
 napred
-n n n
-n n n
-n n n
+crvena crvena crvena
+crvena crvena crvena
+crvena crvena crvena
 
 desno
-d d d
-d d d
-d d d
+bela bela bela
+bela bela bela
+bela bela bela
 
 gore
-g g g
-g g g
-g g g
+plava plava plava
+plava plava plava
+plava plava plava
 
 pozadi
-p p p
-p p p
-p p p
+narandzasta narandzasta narandzasta
+narandzasta narandzasta narandzasta
+narandzasta narandzasta narandzasta
 
 levo
-l l l
-l l l
-l l l
+zuta zuta zuta
+zuta zuta zuta
+zuta zuta zuta
 
 ispod
-i i i
-i i i
-i i i
+zelena zelena zelena
+zelena zelena zelena
+zelena zelena zelena
