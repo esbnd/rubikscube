@@ -2,28 +2,30 @@
 
 #define NAJDUZA_REC 50
 
-int main()
-{
+typedef unsigned char byte;
 
-	FILE * fp = fopen("ulaz.txt","r");
-	if(fp == NULL)
-	{
-		printf("Ne mogu da otvorim ulazni fajl. Kraj rada.");
-		return -1;
-	}
+char* recnik[] = { "napred", "desno", "gore", "pozadi", "levo", "ispod", 
+					"crvena", "bela", "plava", "narandzasta", "zuta", "zelena" };
 
-	/* sema slaganja strana u tablicu 6x9
+/* sema slaganja strana u tablicu 6x9
 	0 napred
 	1 desno
 	2 gore
 	3 pozadi
 	4 levo
 	5 ispod
-	*/
-	int kocka[6][9], kockaStaro[6][9];
+*/
+
+int ucitaj_kocku(char* ime_fajla, byte niz[6][9])
+{
+	FILE * fp = fopen(ime_fajla,"r");
+	if(fp == NULL)
+	{
+		printf("Ne mogu da otvorim ulazni fajl. Kraj rada.");
+		return -1;
+	}
+
 	char rec[NAJDUZA_REC];
-	char* recnik[] = { "napred", "desno", "gore", "pozadi", "levo", "ispod", 
-			"crvena", "bela", "plava", "narandzasta", "zuta", "zelena" };
 	char c;
 	int i=0,j,k;
 
@@ -47,7 +49,7 @@ int main()
 			
 		rec[j]=0;
 
-		printf("\nUcitano: \"%s\"",rec);
+		//printf("\nUcitano: \"%s\"",rec);
 	
 		for(k=0;k<12;k++)
 			if(stricmp(rec,recnik[k]) == 0) break;
@@ -58,6 +60,7 @@ int main()
 			printf("\nRecnik je:");
 			for(j=0;j<12;j++)
 				printf("\n%s ",recnik[j]);
+			fclose(fp);
 			return -2;
 		}
 	
@@ -68,9 +71,21 @@ int main()
 			i++;
 		}
 		else
-			kocka[tekuca_strana][tekuce_polje_u_strani++]=k;
+			niz[tekuca_strana][tekuce_polje_u_strani++]=k;
 
 	}while(i <= 6);
+
+	fclose(fp);
+	return 0;
+}
+
+int main()
+{
+
+	int i,j;
+	byte kocka[6][9];
+
+	ucitaj_kocku("ulaz.txt",kocka);
 
 	for(i=0;i<6;i++)
 	{
@@ -84,7 +99,7 @@ int main()
 		}
 	}
 	
-	fclose(fp);
+	
 	return 0;
 
 

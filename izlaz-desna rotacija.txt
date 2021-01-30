@@ -1,0 +1,29 @@
+napred
+crvena crvena zelena
+crvena crvena zelena
+crvena crvena zelena
+
+desno
+bela bela bela
+bela bela bela
+bela bela bela
+
+gore
+plava plava crvena
+plava plava crvena
+plava plava crvena
+
+pozadi
+narandzasta narandzasta plava
+narandzasta narandzasta plava
+narandzasta narandzasta plava
+
+levo
+zuta zuta zuta
+zuta zuta zuta
+zuta zuta zuta
+
+ispod
+zelena zelena narandzasta
+zelena zelena narandzasta
+zelena zelena narandzasta
