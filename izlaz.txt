@@ -1,3 +1,7 @@
+//komentari pocinju sa 2 kose crte i idu do kraja reda
+
+//desna strana je rotirana u smeru kazaljke na satu jednom
+
 napred
 crvena crvena zelena
 crvena crvena zelena

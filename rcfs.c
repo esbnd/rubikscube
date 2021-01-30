@@ -49,7 +49,12 @@ int ucitaj_kocku(char* ime_fajla, byte niz[6][9])
 			
 		rec[j]=0;
 
-		//printf("\nUcitano: \"%s\"",rec);
+		if(rec[0] == '/' && rec[1] == '/') //komentar
+		{
+			while(c != '\n')
+				c=fgetc(fp);
+			continue; //pocni ponovo novu rec ispocetka
+		}
 	
 		for(k=0;k<12;k++)
 			if(stricmp(rec,recnik[k]) == 0) break;

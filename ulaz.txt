@@ -1,3 +1,5 @@
+//komentari pocinju sa 2 kose crte i idu do kraja reda
+
 napred
 crvena crvena crvena
 crvena crvena crvena
