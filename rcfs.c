@@ -88,10 +88,12 @@ int main()
 {
 
 	int i,j;
-	byte kocka[6][9];
+	byte ulaz[6][9],izlaz[6][9];
 
-	ucitaj_kocku("ulaz.txt",kocka);
+	ucitaj_kocku("ulaz.txt",ulaz);
+	ucitaj_kocku("izlaz.txt",izlaz);
 
+	printf("\n\n\nUlaz:");
 	for(i=0;i<6;i++)
 	{
 		printf("\n");
@@ -100,10 +102,23 @@ int main()
 			if((j % 3) == 0)
 				printf("\n");
 
-			printf("%d ",kocka[i][j]);
+			printf("%d ",ulaz[i][j]);
 		}
 	}
 	
+	printf("\n\n\nIzlaz:");
+	for(i=0;i<6;i++)
+	{
+		printf("\n");
+		for(j=0;j<9;j++)
+		{
+			if((j % 3) == 0)
+				printf("\n");
+
+			printf("%d ",izlaz[i][j]);
+		}
+	}
+
 	
 	return 0;
 
