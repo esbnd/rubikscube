@@ -1,0 +1,4 @@
+ Thistlewaite’s Algorithm 
+ https://www.jaapsch.net/puzzles/thistle.htm
+ https://www.ryanheise.com/cube/human_thistlethwaite_algorithm.html
+ 
