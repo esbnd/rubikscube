@@ -1,5 +1,7 @@
 #include <stdio.h>
+#include <ctype.h>
 
+#define stricmp strcasecmp
 #define NAJDUZA_REC 50
 
 typedef unsigned char byte;
